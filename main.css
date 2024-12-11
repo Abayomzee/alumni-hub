@@ -1158,6 +1158,7 @@ body {
   gap: 7rem;
 
   height: calc(100vh - 4.5rem);
+  overflow-y: auto;
   margin-top: 4.5rem;
 
   background-image: url("./assets/started-img-1.png");
@@ -1261,4 +1262,56 @@ body {
 
 .width-full {
   width: 100%;
+}
+
+.form-input-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  label {
+    color: #667085;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  input {
+    border: 1px solid #d0d5dd;
+    background-color: #f2f4f7;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    font-family: inherit;
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.select-wrapper {
+  border: 1px solid #d0d5dd;
+  background-color: #f2f4f7;
+  padding-inline: 2rem;
+  border-radius: 0.5rem;
+  font-family: inherit;
+
+  select {
+    width: 100%;
+    background-color: transparent;
+    padding-block: 1.5rem;
+    border: none;
+    font-family: inherit;
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.form-container-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
