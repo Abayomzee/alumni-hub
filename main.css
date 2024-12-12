@@ -1157,7 +1157,7 @@ body {
   /* align-items: flex-end; */
   gap: 7rem;
 
-  height: calc(100vh - 4.5rem);
+  /* height: calc(100vh - 4.5rem); */
   overflow-y: auto;
   margin-top: 4.5rem;
 
@@ -1314,4 +1314,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
 }
