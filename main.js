@@ -44,4 +44,9 @@ $(document).ready(function () {
     $(".mobile-side-nav").removeClass("active").fadeOut(500);
     $(".overlay").removeClass("active").fadeOut(500);
   });
+
+  $(".overlay").on("click", function () {
+    $(".mobile-side-nav").removeClass("active").fadeOut(500);
+    $(".overlay").removeClass("active").fadeOut(500);
+  });
 });

@@ -1628,6 +1628,7 @@ body {
   justify-content: flex-end;
   align-items: stretch;
   cursor: pointer;
+  display: none;
 }
 
 .mobile-side-nav {
@@ -1636,6 +1637,8 @@ body {
   max-width: 30rem;
   z-index: 4;
   padding: 2rem;
+
+  margin-left: auto;
 }
 
 .mobile-side-nav__top {
