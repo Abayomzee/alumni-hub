@@ -1303,6 +1303,22 @@ body {
   flex-grow: 1;
 }
 
+@media (width <= 1120px) {
+  .started-layout {
+    justify-content: center;
+    background-image: none;
+  }
+  .started__left {
+    display: none;
+  }
+}
+
+@media (width <= 700px) {
+  .started-layout {
+    margin-top: 0rem;
+  }
+}
+
 .started-img {
   max-width: 59.4rem;
   max-height: 71.5rem;
@@ -1317,8 +1333,17 @@ body {
 .started-form {
   flex-basis: 59.3rem;
   padding: 5rem 7rem;
-  background-color: #ffffff97;
+  background-color: #ffffff;
   border-radius: 5rem 5rem 0 0;
+}
+
+@media (width <= 600px) {
+  .started-form {
+    flex-basis: auto;
+    width: 100%;
+    padding: 3.5rem;
+    border-radius: 1.5rem 1.5rem 0 0;
+  }
 }
 
 /* For members */
@@ -1464,6 +1489,12 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
+}
+
+@media (width <= 600px) {
+  .form-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .menu-btn {
