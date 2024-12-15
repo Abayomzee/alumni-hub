@@ -1632,7 +1632,7 @@ body {
 }
 
 .mobile-side-nav {
-  height: 100svh;
+  height: 100vh;
   background-color: #ffffff;
   max-width: 30rem;
   z-index: 4;
