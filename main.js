@@ -27,4 +27,21 @@ $(document).ready(function () {
       }
     });
   });
+
+  // Menu
+  // Open the overlay and side nav
+  $(".menu-btn").on("click", function () {
+    $(".overlay").fadeIn(500, function () {
+      $(".overlay").addClass("active");
+    });
+    $(".mobile-side-nav").fadeIn(500, function () {
+      $(".mobile-side-nav").addClass("active");
+    });
+  });
+
+  // Close the overlay and side nav
+  $("#btn-close").on("click", function () {
+    $(".mobile-side-nav").removeClass("active").fadeOut(500);
+    $(".overlay").removeClass("active").fadeOut(500);
+  });
 });
