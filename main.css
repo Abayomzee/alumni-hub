@@ -1639,6 +1639,10 @@ body {
   padding: 2rem;
 
   margin-left: auto;
+
+  position: fixed;
+  right: 0;
+  align-self: flex-end;
 }
 
 .mobile-side-nav__top {
