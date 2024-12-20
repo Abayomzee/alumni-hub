@@ -1499,6 +1499,16 @@ body {
   justify-content: center;
 }
 
+.for-member__input__wrapper_down {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  & > * {
+    flex-grow: 1;
+  }
+}
+
 .for-member__input {
   background-color: #ffffff;
   /* border-radius: 1.2rem;
