@@ -462,6 +462,11 @@ body {
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 2.42rem;
+
+  &.bolder {
+    font-weight: 500;
+    font-size: 1.55rem;
+  }
 }
 .p15 {
   font-size: 1.4rem;
