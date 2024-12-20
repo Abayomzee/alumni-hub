@@ -247,7 +247,11 @@ $(document).ready(function () {
           `<option value="" disabled selected>${placeholderText}</option>`
         );
         $.each(data, function (index, item) {
-          dropdown.append(`<option value="${item}">${item}</option>`);
+          dropdown.append(
+            `<option value="${dropdownId === "#schools" ? item?.id : item}">${
+              dropdownId === "#schools" ? item?.name : item
+            }</option>`
+          );
         });
       } else {
         dropdown.append(
