@@ -1137,6 +1137,10 @@ body {
   border-radius: 1.2rem;
 }
 
+.btn-submit:disabled {
+  background-color: #2e91fad1;
+}
+
 .engage-section {
   padding-block: 10rem;
 }
@@ -1650,4 +1654,36 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+}
+
+.good-notification {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+
+  background-color: green;
+  border-radius: 0.6rem;
+
+  padding: 1rem 3rem;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 1.3rem;
+
+  display: none;
+}
+
+.bad-notification {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+
+  background-color: #dc1a1a;
+  border-radius: 0.6rem;
+
+  padding: 1rem 3rem;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 1.3rem;
+
+  display: none;
 }

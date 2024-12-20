@@ -16,7 +16,16 @@
     <title>Get Started | Alumni Hub</title>
   </head>
   <body class="get-started-body">
-      <!-- Overlay -->
+    <!-- Toast -->
+    <div class="good-notification" id="good-notification__gs">
+      <p class="good-notification-text" id="good-notification-text__gs"></p>
+    </div>
+
+    <div class="bad-notification" id="bad-notification__gs">
+      <p class="bad-notification-text" id="bad-notification-text__gs"></p>
+    </div>
+
+    <!-- Overlay -->
     <div class="overlay">
       <div class="mobile-side-nav">
         <div class="mobile-side-nav__top">
@@ -81,18 +90,28 @@
           <h4 class="h25">Get Started</h4>
           <p class="p15 mt-5">Manage and engage your community on AlumniHub.</p>
 
-          <form action="">
+          <form id="get_started-form">
             <div class="form-container-2 mt-20">
               <div class="form-grid">
                 <!--  -->
                 <div class="form-input-2">
                   <label for="">First Name </label>
-                  <input type="text" class="" placeholder="John" />
+                  <input
+                    type="text"
+                    class=""
+                    placeholder="John"
+                    id="started_firstName"
+                  />
                 </div>
                 <!--  -->
                 <div class="form-input-2">
                   <label for="">Last name </label>
-                  <input type="text" class="" placeholder="Doe" />
+                  <input
+                    type="text"
+                    class=""
+                    placeholder="Doe"
+                    id="started_lastName"
+                  />
                 </div>
               </div>
               <!--  -->
@@ -102,25 +121,35 @@
                   type="text"
                   class=""
                   placeholder="Johndoe@Alumniub.com"
+                  id="started_email"
                 />
               </div>
               <!--  -->
               <div class="form-input-2">
                 <label for="">Phone Number</label>
-                <input type="text" class="" placeholder="+234" />
+                <input
+                  type="text"
+                  class=""
+                  placeholder="+234"
+                  id="started_phoneNumnber"
+                />
               </div>
               <!--  -->
               <div class="form-input-2">
                 <label for="">Name of School</label>
-                <input type="text" class="" placeholder="School" />
+                <input
+                  type="text"
+                  class=""
+                  placeholder="School"
+                  id="started_institutionName"
+                />
               </div>
               <!--  -->
               <div class="form-input-2">
                 <label for="">Alumni Association Role</label>
                 <div class="select-wrapper">
-                  <select name="roles" id="roles" class="">
-                    <option value="">Selecr role</option>
-                    <option value="school Admin">School Admin</option>
+                  <select name="roles" id="user-roles-dropdown" class="">
+                    <option value="" disabled selected>Loading roles...</option>
                   </select>
                 </div>
               </div>
@@ -128,9 +157,10 @@
               <div class="form-input-2">
                 <label for="">Location</label>
                 <div class="select-wrapper">
-                  <select name="roles" id="roles" class="">
-                    <option value="">Selecr role</option>
-                    <option value="school Admin">School Admin</option>
+                  <select name="roles" id="countries-dropdown" class="">
+                    <option value="" disabled selected>
+                      Loading locations...
+                    </option>
                   </select>
                 </div>
               </div>
@@ -141,7 +171,11 @@
               the contact information you provide to us.
             </p>
 
-            <button type="submit" class="btn btn-submit width-full mt-20">
+            <button
+              type="submit"
+              id="started_form_submit_btn"
+              class="btn btn-submit width-full mt-20"
+            >
               Submit
             </button>
           </form>

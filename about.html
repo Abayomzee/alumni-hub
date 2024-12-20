@@ -16,6 +16,15 @@
     <title>About | Alumni Hub</title>
   </head>
   <body>
+    <!-- Toast -->
+    <div class="good-notification">
+      <p id="good-notification-text">All fields are required.</p>
+    </div>
+
+    <div class="bad-notification">
+      <p id="bad-notification-text">Error sending message. Please try again.</p>
+    </div>
+
     <!-- Overlay -->
     <div class="overlay">
       <div class="mobile-side-nav">
@@ -204,21 +213,24 @@
         <div class="form-container">
           <h5 class="h15">Send us a message</h5>
 
-          <form class="form-ele mt-30">
+          <form class="form-ele mt-30" id="contactForm">
             <input
               type="text"
               placeholder="Enter your full name*"
               class="form-input"
+              id="about_fullName"
             />
             <input
               type="text"
               placeholder="Enter your phone number*"
               class="form-input"
+              id="about_phoneNumber"
             />
             <input
               type="text"
               placeholder="Enter your full name*"
               class="form-input"
+              id="about_email"
             />
             <textarea
               placeholder="Write us your question here..."
@@ -226,9 +238,10 @@
               rows="4"
               cols="50"
               maxlength="200"
+              id="about_question"
             ></textarea>
 
-            <button type="submit" class="btn-submit mt-20">Send Message</button>
+            <button id="about_form_submit_btn" type="submit" class="btn-submit mt-20">Send Message</button>
           </form>
         </div>
       </div>
